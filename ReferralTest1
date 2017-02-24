@@ -1,0 +1,64 @@
+{
+    "tests" : {
+    "refferaltest1" : {
+      "version" : 1,
+      "description" : "Referral Test 1",
+      "constants" : {
+      },
+      "rule" : null,
+      "salt" : "referraltest1",
+      "buckets" : [ {
+        "name" : "inactive",
+        "value" : -1,
+        "description" : "",
+        "payload" : {
+            "stringValue" : ""
+        }
+      }, {
+        "name" : "variation1",
+        "value" : 0,
+        "description" : "please enter email text box version",
+        "payload" : {
+            "stringValue" : ""
+        }
+      }, {
+        "name" : "variation2",
+        "value" : 1,
+        "description" : "please enter email text box timer version",
+        "payload" : {
+            "stringValue" : ""
+        }
+      }, {
+        "name" : "variation3",
+        "value" : 2,
+        "description" : "please select contact book version",
+        "payload" : {
+            "stringValue" : ""
+        }
+      }
+      }],
+      "allocations" : [ {
+        "rule" : null,
+        "ranges" : [ {
+          "length" : 0.25,
+          "bucketValue" : 0
+        }, {
+          "length" : 0.25,
+          "bucketValue" : -1
+        }, {
+          "length" : 0.25,
+          "bucketValue" : 2
+        }, {
+          "length" : 0.25,
+          "bucketValue" : 2
+        } ]
+      } ],
+      "testType" : "USER"
+    }
+  },
+  "audit" : {
+        "version" : 1,
+        "updatedBy" : "vinodh",
+        "updated" : 23022017
+  }
+}
