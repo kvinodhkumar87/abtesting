@@ -1,12 +1,12 @@
 {
     "tests" : {
-    "refferaltest1" : {
+    "referraltst" : {
       "version" : 1,
       "description" : "Referral Test 1",
       "constants" : {
       },
       "rule" : null,
-      "salt" : "referraltest1",
+      "salt" : "referraltst",
       "buckets" : [ {
         "name" : "inactive",
         "value" : -1,
@@ -35,6 +35,13 @@
         "payload" : {
             "stringValue" : ""
         }
+      }, {
+        "name" : "variation4",
+        "value" : 3,
+        "description" : "please select contact book version2",
+        "payload" : {
+            "stringValue" : ""
+        }
       }
       }],
       "allocations" : [ {
@@ -51,6 +58,9 @@
         }, {
           "length" : 0.25,
           "bucketValue" : 2
+        },{
+          "length" : 0.0,
+          "bucketValue" : 3
         } ]
       } ],
       "testType" : "USER"
